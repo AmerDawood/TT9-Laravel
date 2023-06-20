@@ -186,29 +186,33 @@ $result = multiply($array1 , $array2);
 
 
 
-// function Factorial($number){
-//   if($number <0){
-//       return  false;
-//   }
-//   $factorial = 1;
+function Factorial($number){
+  if($number <0){
+      return  false;
+  }
+  $factorial = 1;
   
-//   for ($i = 2; $i <= $number; $i++) {
-//     $factorial *= $i;
+  for ($i = 2; $i <= $number; $i++) {
+    $factorial *= $i;
 
-//   }
+  }
   
-//   return $factorial;
-// }
+  return $factorial;
+}
 
 
-// $number =20;
+$number =20;
 
-// $result = Factorial($result);
+$result = Factorial($result);
 
 
-// echo "$result";
+echo "$result";
 
 ?>
+
+
+<p style="padding-left: 120px;"><?php  print_r($result);?></p>
+
 
 
 <h1 style="padding-left: 100px;padding-top:50px">#5</h1>
