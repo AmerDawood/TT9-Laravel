@@ -1,0 +1,35 @@
+body {
+   font-family: Arial, sans-serif;
+}
+.blue-div {
+    height: 200px;
+   background-color: #00BFFF;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+   font-size: 24px;
+   text-align: center;
+   padding: 0;
+   margin: 0; 
+      
+}
+
+.header-container {
+   display: flex;
+   align-items: center;
+}
+.header-container h3 {
+   margin-left: 20px;
+   font-size: 15px;
+  
+
+}
+.header-container h3 a{
+   text-decoration: none;
+}
+
+.header-container h1 {
+   margin-left: 100px;
+   font-size: 20px;
+}

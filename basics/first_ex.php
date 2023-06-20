@@ -1,5 +1,34 @@
-<?php
-// 1
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PHP/LARAVEL</title>
+      <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+        <h1>Amer Dawood</h1> 
+            <h3><a href="../basics/first_ex.php">1</a></h3>
+            <h3><a href="../arrays&functions/all.php">2</a></h3>
+            <h3><a href="">3</a></h3>
+
+        </div>
+    </header>
+
+    <div class="blue-div">
+        <p>Welcome To My Homework Website</p>
+    </div>
+
+
+
+
+    <h1 style="padding-left: 100px;padding-top:50px">#1</h1>
+
+
+   
+
+<p style="padding-left: 120px;"> <?php 
 
 function check($text){
     
@@ -26,17 +55,22 @@ $string1 = "hellhe";
 $string2 = "Amer";
 
 
-
-
 var_dump(check($string1));
 var_dump(check($string2));
 
+?></p>
 
 
 
 
-//2 
 
+<h1 style="padding-left: 100px;padding-top:50px">#2</h1>
+
+
+
+
+
+<p style="padding-left: 120px;"> <?php 
 
 function startsWithGo($string) {
 
@@ -57,6 +91,7 @@ function startsWithGo($string) {
 $string1 = 'Goosebumps';
 $string2 = 'OpenAI';
 $string3 = 'Goal';
+
 
 if (startsWithGo($string1)) {
     echo "$string1 starts with 'Go'.";
@@ -80,14 +115,23 @@ if (startsWithGo($string3)) {
     echo "$string3 does not start with 'Go'.";
 }
 
+?></p>
 
 
 
 
-//3
 
 
 
+
+<h1 style="padding-left: 100px;padding-top:50px">#3</h1>
+
+
+
+
+<p style="padding-left: 120px;">
+
+<?php 
 
 $x = 20;
 
@@ -100,13 +144,18 @@ if($x > 0 && ($x %3 == 0 || $x %7 == 0 )){
 
 }
 
+?>
+
+</p>
 
 
 
-//4
+
+<h1 style="padding-left: 100px;padding-top:50px">#4</h1>
 
 
-
+<p style="padding-left: 120px;">
+<?php 
 function largestNumber($num1 , $num2 ,$num3){
     
     $largest = $num1;
@@ -135,12 +184,21 @@ $num3  = 13;
 
 
 var_dump(largestNumber($num1 , $num2 ,$num3));
+?>
+</p>
+
+
+
+<h1 style="padding-left: 100px;padding-top:50px">#5</h1>
 
 
 
 
 
-///5
+<p style="padding-left: 120px;">
+
+
+<?php 
 
 
 function nearNumber($num1,$num2){
@@ -164,7 +222,6 @@ function nearNumber($num1,$num2){
 $num1=44;
 $num2 = 67;
 
-
 $nearNum = nearNumber($num1, $num2);
 
 
@@ -174,10 +231,20 @@ if($nearNum){
 }elseif($nearNum ==0){
     echo "The Tow number is equal";
 } 
+?>
+
+</p>
 
 
 
-///6
+
+
+<h1 style="padding-left: 100px;padding-top:50px">#6</h1>
+
+
+<p style="padding-left: 120px;">
+
+<?php 
 
 function findLargNumber($num1, $num2) {
     if ($num1 >= 20 && $num1 <= 30 && $num2 >= 20 && $num2 <= 30) {
@@ -204,14 +271,18 @@ if($larg <0){
     echo "The larger value  id $larg";
 
 }
+?>
+</p>
 
 
 
-//7
+
+<h1 style="padding-left: 100px;padding-top:50px">#7</h1>
+
+<p style="padding-left: 120px;">
 
 
-
-  
+<?php 
 function countString ($string){
     $count =0 ;
     $digits = str_split($string);
@@ -236,14 +307,16 @@ $count = countString($string);
 
 
 echo "The number of string is {$count}";
+?>
+</p>
 
 
 
-
-//8
-
+<h1 style="padding-left: 100px;padding-top:50px">#8</h1>
 
 
+<p style="padding-left: 120px;">
+    <?php 
 function sumOfDigits($number) {
 
 
@@ -266,13 +339,23 @@ $number = 12345;
 $count = sumOfDigits($number);
 
 
-echo "$count";
+echo "The Sum of Digets is : $count";
+
+
+    ?>
+</p>
 
 
 
 
-//9
 
+<h1 style="padding-left: 100px;padding-top:50px">#9</h1>
+<p style="padding-left: 100px;padding-top:50px">The recive the text (textcode) is :</p>
+<p style="padding-left: 120px;">
+
+
+
+<?php 
 
 $string = "testcode";
 $length = strlen($string);
@@ -282,13 +365,10 @@ print $string[$i];
 }
 
 
-
-
-
-
-
-
-
-
-
 ?>
+</p>
+
+
+</body>
+</html>
+
